@@ -12,9 +12,9 @@ using System.Windows.Documents;
 using System.Windows.Media;
 
 namespace PART2POE
-{
+{//start of namespace
     public partial class MainWindow : Window
-    {
+    {//start of partial class
         private readonly ArrayList reply = new ArrayList();
         private readonly ArrayList ignore = new ArrayList();
         private readonly user_name check_name = new user_name();
@@ -318,4 +318,4 @@ namespace PART2POE
         public string CorrectAnswer { get; set; } = string.Empty;
         public string Explanation { get; set; } = string.Empty;
     }
-}
+}//end of namepace
