@@ -4,9 +4,9 @@ using System.Data.SqlClient;
 using System.Windows;
 
 namespace PART2POE
-{
+{//start of namespace
     public class tasks
-    {
+    {//start of class
         // Update this string to match your exact server name connection configuration if needed
         private readonly string connectionString = @"Data Source=(LocalDB)\dev_instance;Initial Catalog=prog_tasks;Integrated Security=True;Connect Timeout=30;";
 
@@ -26,11 +26,9 @@ namespace PART2POE
             }
         }
 
-        // =========================================================================
-        // UPDATED: Accepting 5 string parameter slots to record reminders safely
-        // =========================================================================
+       
         public void insert_task(string name, string desc, string dueDate, string status, string reminderDate)
-        {
+        {// start of insert_task method
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
                 string query = "INSERT INTO task (task_name, task_desription, task_dueDate, task_status, task_reminderDate) VALUES (@name, @desc, @due, @status, @reminder)";
@@ -174,4 +172,4 @@ namespace PART2POE
             DeleteTask(taskId);
         }
     }
-}
+}//end of namespace
