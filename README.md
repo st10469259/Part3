@@ -26,7 +26,7 @@ Database Setup: . The connection string in tasks.cs is configured to use (LocalD
 Build the Project: Open the solution in Visual Studio and perform a Rebuild Solution to ensure all references are correctly resolved.
 
 Run: Launch the application via the Start button in Visual Studio.
-
+working SQL:SQLQuery1.1.1
 Development Milestones
 This project has been developed in iterations, following the submission requirements for commits and versioning:
 
